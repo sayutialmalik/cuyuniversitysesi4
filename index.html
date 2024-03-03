@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cetrekan lampu</title>
+</head>
+
+<body>
+    <img src="asset/images/off.gif" alt="" id="lampu1" />
+    <h1>cetrekan lampu on off</h1>
+    <button onclick="saklar('on')">nyalakan lampu</button>
+    <button onclick="saklar('off')">matikan lampu</button>
+
+    <!-- skrip js -->
+    <script>
+        function saklar(params) {
+            console.log(params);
+            let lampu1 = document.getElementById("lampu1");
+
+            if (params == "on") {
+                lampu1.src = "asset/images/on.gif"
+            }
+            if (params == "off") {
+                lampu1.src = "asset/images/off.gif"
+            }
+            return lampu1;
+        }
+    </script>
+</body>
+
+</html>
